@@ -1,0 +1,32 @@
+{
+  "name": "nsys-web-viewer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A fast, modern in-browser viewer for NVIDIA Nsight Systems profiles",
+  "type": "module",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "start": "vite build && node server/index.mjs",
+    "serve": "node server/index.mjs",
+    "typecheck": "tsc --noEmit",
+    "sample": "python3 scripts/make_sample.py --out public/sample.sqlite"
+  },
+  "dependencies": {
+    "lucide-react": "^1.80.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "sql.js": "^1.17.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.3",
+    "@types/react-dom": "^19.3.0",
+    "@types/sql.js": "^1.16.1",
+    "@vitejs/plugin-react": "^6.3.0",
+    "typescript": "~5.9.3",
+    "vite": "^8.3.8"
+  }
+}

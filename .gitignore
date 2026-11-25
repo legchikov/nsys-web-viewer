@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.vite/
+*.log
+.DS_Store
+
+# Profiles (keep the bundled demo)
+*.nsys-rep
+*.qdrep
+*.qdstrm
+*.sqlite
+!public/sample.sqlite
